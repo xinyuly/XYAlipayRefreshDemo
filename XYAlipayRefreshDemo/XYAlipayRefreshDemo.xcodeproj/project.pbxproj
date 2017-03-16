@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE26F2F51E7A8B1300090285 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F2F41E7A8B1300090285 /* main.m */; };
+		AE26F2F81E7A8B1300090285 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F2F71E7A8B1300090285 /* AppDelegate.m */; };
+		AE26F2FB1E7A8B1300090285 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F2FA1E7A8B1300090285 /* ViewController.m */; };
+		AE26F2FE1E7A8B1300090285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE26F2FC1E7A8B1300090285 /* Main.storyboard */; };
+		AE26F3001E7A8B1300090285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE26F2FF1E7A8B1300090285 /* Assets.xcassets */; };
+		AE26F3031E7A8B1300090285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE26F3011E7A8B1300090285 /* LaunchScreen.storyboard */; };
+		AE26F3131E7A8B2200090285 /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE26F30B1E7A8B2100090285 /* loading@2x.png */; };
+		AE26F3141E7A8B2200090285 /* pull_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE26F30C1E7A8B2100090285 /* pull_refresh@2x.png */; };
+		AE26F3151E7A8B2200090285 /* UIScrollView+XYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F30E1E7A8B2100090285 /* UIScrollView+XYRefreshView.m */; };
+		AE26F3161E7A8B2200090285 /* XYPullRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F3101E7A8B2200090285 /* XYPullRefreshView.m */; };
+		AE26F3171E7A8B2200090285 /* XYPushRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F3121E7A8B2200090285 /* XYPushRefreshView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE26F2F01E7A8B1300090285 /* XYAlipayRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYAlipayRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE26F2F41E7A8B1300090285 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE26F2F61E7A8B1300090285 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE26F2F71E7A8B1300090285 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE26F2F91E7A8B1300090285 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE26F2FA1E7A8B1300090285 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE26F2FD1E7A8B1300090285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE26F2FF1E7A8B1300090285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE26F3021E7A8B1300090285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE26F3041E7A8B1300090285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE26F30B1E7A8B2100090285 /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
+		AE26F30C1E7A8B2100090285 /* pull_refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pull_refresh@2x.png"; sourceTree = "<group>"; };
+		AE26F30D1E7A8B2100090285 /* UIScrollView+XYRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XYRefreshView.h"; sourceTree = "<group>"; };
+		AE26F30E1E7A8B2100090285 /* UIScrollView+XYRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XYRefreshView.m"; sourceTree = "<group>"; };
+		AE26F30F1E7A8B2100090285 /* XYPullRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPullRefreshView.h; sourceTree = "<group>"; };
+		AE26F3101E7A8B2200090285 /* XYPullRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPullRefreshView.m; sourceTree = "<group>"; };
+		AE26F3111E7A8B2200090285 /* XYPushRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPushRefreshView.h; sourceTree = "<group>"; };
+		AE26F3121E7A8B2200090285 /* XYPushRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPushRefreshView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE26F2ED1E7A8B1300090285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE26F2E71E7A8B1300090285 = {
+			isa = PBXGroup;
+			children = (
+				AE26F2F21E7A8B1300090285 /* XYAlipayRefreshDemo */,
+				AE26F2F11E7A8B1300090285 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE26F2F11E7A8B1300090285 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE26F2F01E7A8B1300090285 /* XYAlipayRefreshDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE26F2F21E7A8B1300090285 /* XYAlipayRefreshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AE26F30A1E7A8B2100090285 /* XYPullControl */,
+				AE26F2F61E7A8B1300090285 /* AppDelegate.h */,
+				AE26F2F71E7A8B1300090285 /* AppDelegate.m */,
+				AE26F2F91E7A8B1300090285 /* ViewController.h */,
+				AE26F2FA1E7A8B1300090285 /* ViewController.m */,
+				AE26F2FC1E7A8B1300090285 /* Main.storyboard */,
+				AE26F2FF1E7A8B1300090285 /* Assets.xcassets */,
+				AE26F3011E7A8B1300090285 /* LaunchScreen.storyboard */,
+				AE26F3041E7A8B1300090285 /* Info.plist */,
+				AE26F2F31E7A8B1300090285 /* Supporting Files */,
+			);
+			path = XYAlipayRefreshDemo;
+			sourceTree = "<group>";
+		};
+		AE26F2F31E7A8B1300090285 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE26F2F41E7A8B1300090285 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE26F30A1E7A8B2100090285 /* XYPullControl */ = {
+			isa = PBXGroup;
+			children = (
+				AE26F30B1E7A8B2100090285 /* loading@2x.png */,
+				AE26F30C1E7A8B2100090285 /* pull_refresh@2x.png */,
+				AE26F30D1E7A8B2100090285 /* UIScrollView+XYRefreshView.h */,
+				AE26F30E1E7A8B2100090285 /* UIScrollView+XYRefreshView.m */,
+				AE26F30F1E7A8B2100090285 /* XYPullRefreshView.h */,
+				AE26F3101E7A8B2200090285 /* XYPullRefreshView.m */,
+				AE26F3111E7A8B2200090285 /* XYPushRefreshView.h */,
+				AE26F3121E7A8B2200090285 /* XYPushRefreshView.m */,
+			);
+			path = XYPullControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE26F2EF1E7A8B1300090285 /* XYAlipayRefreshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE26F3071E7A8B1300090285 /* Build configuration list for PBXNativeTarget "XYAlipayRefreshDemo" */;
+			buildPhases = (
+				AE26F2EC1E7A8B1300090285 /* Sources */,
+				AE26F2ED1E7A8B1300090285 /* Frameworks */,
+				AE26F2EE1E7A8B1300090285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYAlipayRefreshDemo;
+			productName = XYAlipayRefreshDemo;
+			productReference = AE26F2F01E7A8B1300090285 /* XYAlipayRefreshDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE26F2E81E7A8B1300090285 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = xinyuly;
+				TargetAttributes = {
+					AE26F2EF1E7A8B1300090285 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NQ6LQC28H4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AE26F2EB1E7A8B1300090285 /* Build configuration list for PBXProject "XYAlipayRefreshDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE26F2E71E7A8B1300090285;
+			productRefGroup = AE26F2F11E7A8B1300090285 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE26F2EF1E7A8B1300090285 /* XYAlipayRefreshDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE26F2EE1E7A8B1300090285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE26F3141E7A8B2200090285 /* pull_refresh@2x.png in Resources */,
+				AE26F3031E7A8B1300090285 /* LaunchScreen.storyboard in Resources */,
+				AE26F3131E7A8B2200090285 /* loading@2x.png in Resources */,
+				AE26F3001E7A8B1300090285 /* Assets.xcassets in Resources */,
+				AE26F2FE1E7A8B1300090285 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE26F2EC1E7A8B1300090285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE26F3161E7A8B2200090285 /* XYPullRefreshView.m in Sources */,
+				AE26F2FB1E7A8B1300090285 /* ViewController.m in Sources */,
+				AE26F3151E7A8B2200090285 /* UIScrollView+XYRefreshView.m in Sources */,
+				AE26F2F81E7A8B1300090285 /* AppDelegate.m in Sources */,
+				AE26F2F51E7A8B1300090285 /* main.m in Sources */,
+				AE26F3171E7A8B2200090285 /* XYPushRefreshView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE26F2FC1E7A8B1300090285 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE26F2FD1E7A8B1300090285 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE26F3011E7A8B1300090285 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE26F3021E7A8B1300090285 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE26F3051E7A8B1300090285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE26F3061E7A8B1300090285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE26F3081E7A8B1300090285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NQ6LQC28H4;
+				INFOPLIST_FILE = XYAlipayRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xinyuly.XYAlipayRefreshDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE26F3091E7A8B1300090285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NQ6LQC28H4;
+				INFOPLIST_FILE = XYAlipayRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xinyuly.XYAlipayRefreshDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE26F2EB1E7A8B1300090285 /* Build configuration list for PBXProject "XYAlipayRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE26F3051E7A8B1300090285 /* Debug */,
+				AE26F3061E7A8B1300090285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE26F3071E7A8B1300090285 /* Build configuration list for PBXNativeTarget "XYAlipayRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE26F3081E7A8B1300090285 /* Debug */,
+				AE26F3091E7A8B1300090285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE26F2E81E7A8B1300090285 /* Project object */;
+}
