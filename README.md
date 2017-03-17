@@ -1,7 +1,7 @@
 # XYAlipayRefreshDemo
 Alipay 的新版，首页的UI和刷新控件的位置发生了变化。闲暇之余做了个类似的Demo
 
-![image](https://github.com/xinyuly/XYAlipayRefreshDemo/blob/master/ali.jif)
+![image](https://github.com/xinyuly/XYAlipayRefreshDemo/blob/master/ali.gif)
 
 
 **实现方式：** UIScrollView + UITableView 。UITableView和一个topView作为UIScrollView的subView
