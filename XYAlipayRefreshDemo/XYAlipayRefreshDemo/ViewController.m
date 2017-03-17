@@ -11,6 +11,7 @@
 
 #define KScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define KScreenHeight [UIScreen mainScreen].bounds.size.height
+#define KTopViewHeight  300
 #define KTopHeaderViewHeight  80
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,XYPullRefreshViewDelegate,XYPushRefreshViewDelegate>
@@ -28,8 +29,6 @@
 
 @property (nonatomic, strong) UIView *topHeaderView;
 
-@property (nonatomic, assign) CGFloat topViewHeight;
-
 @property (nonatomic, assign) NSInteger dataCount;
 
 @end
@@ -41,7 +40,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.topViewHeight = 300;
     [self.view addSubview:self.navBGView];
     [self.view addSubview:self.navView];
     [self.view addSubview:self.navNewView];
@@ -49,19 +47,19 @@
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.topView];
     [self.scrollView addSubview:self.tableView];
-    
+    //添加刷新控件
     [self.tableView showPullRefreshViewWithDelegate:self];
     [self.scrollView showPushRefreshViewWithDelegate:self];
     [self.tableView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
     self.dataCount = 20;
 }
-//根据tableView的contentSize决定scrollView的contentSize大小
+//根据tableView的contentSize改变scrollView的contentSize大小
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"contentSize"]) {
         CGRect tFrame = self.tableView.frame;
         tFrame.size.height = self.tableView.contentSize.height;
         self.tableView.frame = tFrame;
-        self.scrollView.contentSize = CGSizeMake(0, self.tableView.contentSize.height+self.topViewHeight);
+        self.scrollView.contentSize = CGSizeMake(0, self.tableView.contentSize.height+KTopViewHeight);
     }
 }
 #pragma mark - XYPullRefreshViewDelegate
@@ -89,7 +87,7 @@
         self.topView.frame = frame;
         
         CGRect tFrame = self.tableView.frame;
-        tFrame.origin.y = offsetY + self.topViewHeight;
+        tFrame.origin.y = offsetY + KTopViewHeight;
         self.tableView.frame = tFrame;
         
         if (![self.tableView isRefreshing]) {
@@ -135,7 +133,7 @@
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, KScreenWidth, KScreenHeight-64)];
         _scrollView.delegate = self;
         //Indicator的显示位置
-        _scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(self.topViewHeight, 0, 0, 0);
+        _scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(KTopViewHeight, 0, 0, 0);
         _scrollView.contentSize = CGSizeMake(0, KScreenHeight*2);
     }
     return _scrollView;
@@ -143,7 +141,7 @@
 
 - (UITableView *)tableView {
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.topViewHeight, KScreenWidth, KScreenHeight*2-self.topViewHeight)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, KTopViewHeight, KScreenWidth, KScreenHeight*2-KTopViewHeight)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.scrollEnabled = NO;
@@ -153,7 +151,7 @@
 
 - (UIView *)topView {
     if (_topView == nil) {
-        _topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, self.topViewHeight)];
+        _topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KTopViewHeight)];
         _topView.backgroundColor = [UIColor colorWithRed:66/255.0 green:128/255.0 blue:240/255.0 alpha:1];
         UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KTopHeaderViewHeight)];
         headerView.backgroundColor = [UIColor colorWithRed:66/255.0 green:128/255.0 blue:240/255.0 alpha:1];
@@ -166,7 +164,7 @@
         self.topHeaderView = headerView;
         [_topView addSubview:headerView];
         
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, KTopHeaderViewHeight, KScreenWidth, self.topViewHeight-KTopHeaderViewHeight)];
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, KTopHeaderViewHeight, KScreenWidth, KTopViewHeight-KTopHeaderViewHeight)];
         view.backgroundColor = [UIColor brownColor];
         [_topView addSubview:view];
     }
