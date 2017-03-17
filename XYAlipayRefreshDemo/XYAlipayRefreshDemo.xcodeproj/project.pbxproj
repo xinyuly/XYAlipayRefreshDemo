@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE18913C1E7BAF8400CC03C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE18913B1E7BAF8400CC03C5 /* Assets.xcassets */; };
 		AE26F2F51E7A8B1300090285 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F2F41E7A8B1300090285 /* main.m */; };
 		AE26F2F81E7A8B1300090285 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F2F71E7A8B1300090285 /* AppDelegate.m */; };
 		AE26F2FB1E7A8B1300090285 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26F2FA1E7A8B1300090285 /* ViewController.m */; };
 		AE26F2FE1E7A8B1300090285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE26F2FC1E7A8B1300090285 /* Main.storyboard */; };
-		AE26F3001E7A8B1300090285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE26F2FF1E7A8B1300090285 /* Assets.xcassets */; };
 		AE26F3031E7A8B1300090285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE26F3011E7A8B1300090285 /* LaunchScreen.storyboard */; };
 		AE26F3131E7A8B2200090285 /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE26F30B1E7A8B2100090285 /* loading@2x.png */; };
 		AE26F3141E7A8B2200090285 /* pull_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE26F30C1E7A8B2100090285 /* pull_refresh@2x.png */; };
@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE18913B1E7BAF8400CC03C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE26F2F01E7A8B1300090285 /* XYAlipayRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYAlipayRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE26F2F41E7A8B1300090285 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE26F2F61E7A8B1300090285 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		AE26F2F91E7A8B1300090285 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AE26F2FA1E7A8B1300090285 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AE26F2FD1E7A8B1300090285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE26F2FF1E7A8B1300090285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE26F3021E7A8B1300090285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE26F3041E7A8B1300090285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE26F30B1E7A8B2100090285 /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 				AE26F2F71E7A8B1300090285 /* AppDelegate.m */,
 				AE26F2F91E7A8B1300090285 /* ViewController.h */,
 				AE26F2FA1E7A8B1300090285 /* ViewController.m */,
+				AE18913B1E7BAF8400CC03C5 /* Assets.xcassets */,
 				AE26F2FC1E7A8B1300090285 /* Main.storyboard */,
-				AE26F2FF1E7A8B1300090285 /* Assets.xcassets */,
 				AE26F3011E7A8B1300090285 /* LaunchScreen.storyboard */,
 				AE26F3041E7A8B1300090285 /* Info.plist */,
 				AE26F2F31E7A8B1300090285 /* Supporting Files */,
@@ -170,8 +170,8 @@
 				AE26F3141E7A8B2200090285 /* pull_refresh@2x.png in Resources */,
 				AE26F3031E7A8B1300090285 /* LaunchScreen.storyboard in Resources */,
 				AE26F3131E7A8B2200090285 /* loading@2x.png in Resources */,
-				AE26F3001E7A8B1300090285 /* Assets.xcassets in Resources */,
 				AE26F2FE1E7A8B1300090285 /* Main.storyboard in Resources */,
+				AE18913C1E7BAF8400CC03C5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +346,7 @@
 				AE26F3091E7A8B1300090285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
